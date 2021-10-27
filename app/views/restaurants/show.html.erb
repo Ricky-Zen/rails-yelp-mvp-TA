@@ -1,0 +1,31 @@
+<div class="container-show">
+  <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" style="width:100%;">
+  <!-- <div class="bottom-left">Bottom Left</div>
+  <div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div> -->
+  <div class="centered px-8">
+      <div class="mt-4">
+      <h2 style="text-align:center" class="col">Discover <%= @restaurant.name %> </h2>
+      <h4 style="text-align:center" class="col mb-4"><em><%= @restaurant.category %> restaurant </em></h4>
+      <p style="text-align:center" class="col mb-0"><%= @restaurant.address %></p>
+      <p style="text-align:center" class="col"><%= @restaurant.phone_number %></p>
+      <div class="row justify-content-md-center">
+        <%= render 'partials/review' %>
+       <div class="col review w-50 mb-10">
+            <h5 style="text-align:center" class="mb-4">Reviews</h5>
+            <% if @restaurant.reviews.count > 0 %>
+              <% @restaurant.reviews.each do |review| %>
+              <div style="text-align:left" class="px-3">
+                <p> <%= review.content %> - <%= review.rating %> /5 ⭐</p>
+                <p class="timestamp"><%= review.created_at %> </p>
+              </div>
+              <hr>
+              <% end %>
+            <% end %>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

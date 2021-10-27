@@ -1,0 +1,17 @@
+<div class="container form-new">
+  <div class="row justify-content-md-center">
+    <h3 class="title-form">Add a restaurant</h3>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="w-50">
+        <%= simple_form_for @restaurant do |f| %>
+            <%= f.input :name %>
+            <%= f.input :category %>
+            <%= f.input :address %>
+            <%= f.input :phone_number %>
+            <%= f.submit 'Create it!', class: 'btn btn-primary' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

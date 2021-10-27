@@ -1,0 +1,77 @@
+// Place all the styles related to the Restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+/* Container holding the image and the text */
+.container-show {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  width: 800px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  opacity: 97%;
+  color: black;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  margin-top: 10%;
+}
+
+.form-new {
+  margin-top: 30px;
+}
+
+.title-form {
+  margin-bottom: 50px;
+}
+
+.simple_form .new_restaurant {
+  width: 50%;
+}
+
+.review {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.timestamp {
+  font-size: 10px;
+}
